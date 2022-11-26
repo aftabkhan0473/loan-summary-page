@@ -1,15 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Summary</title>
     <style>
-        
+        :root {
+            --primary_color: rgb(0, 0, 0);
+            --secondary_color: rgb(255, 255, 255);
+            --border: 0.5px solid black;
+            --padding_table_box: 2px 5px;
+            --h1_font : 17px;
+        }
+        th,td{
+            border: var(--border);
+            padding: var(--padding_table_box);
+        }
+        td img {
+            width: 100px;
+        }
+        table{
+            /* border-collapse: collapse; */
+        }
+
+        .table th {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .table th,
+        .table td {
+            border: var(--border);
+            padding: var(--padding_table_box);
+        }
+
+        table {
+            border: var(--border);
+        }
+
+        .logo {
+            border: var(--border);
+        }
+
+        th {
+            width: 500px;
+        }
+
+        .text_center {
+            text-align: center;
+        }
+        h1{
+            font-size: var(--h1_font);
+        }
+        .container{
+            width: 670px;
+        }
     </style>
 </head>
+
 <body>
-    
+    <div class="outer_most">
+        <div class="container">
+            <header class="header">
+                <table class="text_center" style="border-collapse: collapse;">
+                    <tr>
+                        <td class="logo"><img src="/images/nidhi_software_logo.png" alt="nidhi"></td>
+                        <td>
+                            <table class="table" style="border-collapse: collapse;">
+                                <tr>
+                                    <th colspan="2">NIDHI SOFWARE PRO</th>
+                                </tr>
+                                <tr>
+                                    <td>REG. NO.</td>
+                                    <td>U65999BR2019PLC041305</td>
+                                </tr>
+                                <tr>
+                                    <td>Branch Name : </td>
+                                    <td>MUZAFFARPUR</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </header>
+            <main class="main">
+                <div class="up">
+                    <h1 class="text_center">LOAN SUMMARY SCHEDULE</h1>
+                    <p>This Loan Summary Schedule forms an integral part of Loan Agreement Dated 16/01/2021 executed between the Borrower(s) named herein and <strong>NIDHI SOFTWRAE PRO</strong>.Loan Agreementand shall be read in conjunction with the Loan Agreement.</p>
+                </div>
+                <div class="mid">
+                    <table>
+                        <tr>
+                            <td>Customer Id</td>
+                            <td>14706677</td>
+                        </tr>
+                        <tr>
+                            <td>Loan A/C No.</td>
+                            <td>00180100136</td>
+                        </tr>
+                        <tr>
+                            <td>Branch Office Address</td>
+                            <td>Brahmpura, Muzaffarpur</td>
+                        </tr>
+                        <tr>
+                            <td>Name of Applicant</td>
+                            <td>MD AFTAB ALI</td>
+                        </tr>
+                        <tr>
+                            <td>Address of Applicant</td>
+                            <td>Majhaulia Sakra Muzaffarpur Bihar 843104</td>
+                        </tr>
+                        <tr>
+                            <td>Name of Co-Applicant</td>
+                            <td>VARUN SHARMA</td>
+                        </tr>
+                        <tr>
+                            <td>ADDRESS OF CO-APPLICANT</td>
+                            <td>Majhaulia Sakra Muzaffarpur Bihar 843104</td>
+                        </tr>
+                        <tr>
+                            <td>AMOUNT OF LOAN</td>
+                            <td>Rs. 15000.00 ( Fifteen Thousand Rupees Only )</td>
+                        </tr>
+                        <tr>
+                            <td>Rate Of Interest</td>
+                            <td>20.00 % per annum on Flat Balancing Method.</td>
+                        </tr>
+                        <tr>
+                            <td>Loan Duration</td>
+                            <td>364 Days</td>
+                        </tr>
+                        <tr>
+                            <td>Loan Frequency</td>
+                            <td>weekly</td>
+                        </tr>
+                        <tr>
+                            <td>Additional Interest ( Applicable for payment defaults )</td>
+                            <td>An amount not exceeding 44 % p. a. on the outstanding Installments</td>
+                        </tr>
+                        <tr>
+                            <td>Documentation Fee/ Charges</td>
+                            <td>An amount not exceeding Rs. 600.00 .</td>
+                        </tr>
+                        <tr>
+                            <td>Taxes And Levies</td>
+                            <td>All the charges indicated above or elsewhere in the Loan Agreement
+                                shall be exclusive of all taxes and statutory levies as may be applicable
+                                on same including without limitation service tax and cases there on.</td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+            <footer class="footer">
+        
+            </footer>
+        </div>
+    </div>
 </body>
+
 </html>
