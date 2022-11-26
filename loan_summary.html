@@ -13,6 +13,7 @@
             --border: 0.5px solid black;
             --padding_table_box: 2px 5px;
             --h1_font : 17px;
+            --dashed_border : 0.5px dashed black;
         }
         th,td{
             border: var(--border);
@@ -57,105 +58,216 @@
         .container{
             width: 670px;
         }
+        .flex_row{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .flex_row p{
+            margin-top: 45px;
+            width: 207px;
+            text-align: center;
+            padding-top: 15px;
+            border-top: var(--dashed_border);
+        }
+        .mid{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+        .outer_most{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            margin-top: 35px;
+        }
     </style>
 </head>
 
 <body>
     <div class="outer_most">
-        <div class="container">
-            <header class="header">
-                <table class="text_center" style="border-collapse: collapse;">
-                    <tr>
-                        <td class="logo"><img src="/images/nidhi_software_logo.png" alt="nidhi"></td>
-                        <td>
-                            <table class="table" style="border-collapse: collapse;">
-                                <tr>
-                                    <th colspan="2">NIDHI SOFWARE PRO</th>
-                                </tr>
-                                <tr>
-                                    <td>REG. NO.</td>
-                                    <td>U65999BR2019PLC041305</td>
-                                </tr>
-                                <tr>
-                                    <td>Branch Name : </td>
-                                    <td>MUZAFFARPUR</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </header>
-            <main class="main">
-                <div class="up">
-                    <h1 class="text_center">LOAN SUMMARY SCHEDULE</h1>
-                    <p>This Loan Summary Schedule forms an integral part of Loan Agreement Dated 16/01/2021 executed between the Borrower(s) named herein and <strong>NIDHI SOFTWRAE PRO</strong>.Loan Agreementand shall be read in conjunction with the Loan Agreement.</p>
+        <div class="outer">
+            <div class="container">
+                <header class="header">
+                    <table class="text_center" style="border-collapse: collapse;">
+                        <tr>
+                            <td class="logo"><img src="/images/nidhi_software_logo.png" alt="nidhi"></td>
+                            <td>
+                                <table class="table" style="border-collapse: collapse;">
+                                    <tr>
+                                        <th colspan="2">NIDHI SOFWARE PRO</th>
+                                    </tr>
+                                    <tr>
+                                        <td>REG. NO.</td>
+                                        <td>U65999BR2019PLC041305</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch Name : </td>
+                                        <td>MUZAFFARPUR</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+                <main class="main">
+                    <div class="up">
+                        <h1 class="text_center">LOAN SUMMARY SCHEDULE</h1>
+                        <p style="text-align: justify;">This Loan Summary Schedule forms an integral part of Loan Agreement Dated 16/01/2021 executed between the Borrower(s) named herein and <strong>NIDHI SOFTWRAE PRO</strong>.Loan Agreementand shall be read in conjunction with the Loan Agreement.</p>
+                    </div>
+                    <div class="mid">
+                        <table>
+                            <tr>
+                                <td>Customer Id</td>
+                                <td>14706677</td>
+                            </tr>
+                            <tr>
+                                <td>Loan A/C No.</td>
+                                <td>00180100136</td>
+                            </tr>
+                            <tr>
+                                <td>Branch Office Address</td>
+                                <td>Brahmpura, Muzaffarpur</td>
+                            </tr>
+                            <tr>
+                                <td>Name of Applicant</td>
+                                <td>MD AFTAB ALI</td>
+                            </tr>
+                            <tr>
+                                <td>Address of Applicant</td>
+                                <td>Majhaulia Sakra Muzaffarpur Bihar 843104</td>
+                            </tr>
+                            <tr>
+                                <td>Name of Co-Applicant</td>
+                                <td>VARUN SHARMA</td>
+                            </tr>
+                            <tr>
+                                <td>ADDRESS OF CO-APPLICANT</td>
+                                <td>Majhaulia Sakra Muzaffarpur Bihar 843104</td>
+                            </tr>
+                            <tr>
+                                <td>AMOUNT OF LOAN</td>
+                                <td>Rs. 15000.00 ( Fifteen Thousand Rupees Only )</td>
+                            </tr>
+                            <tr>
+                                <td>Rate Of Interest</td>
+                                <td>20.00 % per annum on Flat Balancing Method.</td>
+                            </tr>
+                            <tr>
+                                <td>Loan Duration</td>
+                                <td>364 Days</td>
+                            </tr>
+                            <tr>
+                                <td>Loan Frequency</td>
+                                <td>weekly</td>
+                            </tr>
+                            <tr>
+                                <td>Additional Interest ( Applicable for payment defaults )</td>
+                                <td>An amount not exceeding 44 % p. a. on the outstanding Installments</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation Fee/ Charges</td>
+                                <td>An amount not exceeding Rs. 600.00 .</td>
+                            </tr>
+                            <tr>
+                                <td>Taxes And Levies</td>
+                                <td>All the charges indicated above or elsewhere in the Loan Agreement
+                                    shall be exclusive of all taxes and statutory levies as may be applicable
+                                    on same including without limitation service tax and cases there on.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="flex_row">
+                        <p>Signature of Applicant</p>
+                        <p>Signature of Co-Applicant</p>
+                        <p>Authorised Signatory</p>
+                    </div>
+                </footer>
+            </div>
+            <div class="container">
+                <header class="header">
+                    <table class="text_center" style="border-collapse: collapse;">
+                        <tr>
+                            <td class="logo"><img src="/images/nidhi_software_logo.png" alt="nidhi"></td>
+                            <td>
+                                <table class="table" style="border-collapse: collapse;">
+                                    <tr>
+                                        <th colspan="2">NIDHI SOFWARE PRO</th>
+                                    </tr>
+                                    <tr>
+                                        <td>REG. NO.</td>
+                                        <td>U65999BR2019PLC041305</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch Name : </td>
+                                        <td>MUZAFFARPUR</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+                <h1 class="text_center">REPAYMENT SCHEDULE</h1>
+                <div class="mid">                
+                    <table>
+                        <tr>
+                            <td>Date of Commencement of First EMI</td>
+                            <td>10/07/2021</td>
+                        </tr>
+                        <tr>
+                            <td>Last EMI due Date</td>
+                            <td>15/01/2022</td>
+                        </tr>
+                        <tr>
+                            <td>Installment No.</td>
+                            <td>First to 51 Installment</td>
+                        </tr>
+                        <tr>
+                            <td>Due  Date of each of the EMI</td>
+                            <td>weekly</td>
+                        </tr>
+                        <tr>
+                            <td>EMI AMOUNT</td>
+                            <td>Rs. 346.00 /-</td>
+                        </tr>
+                        <tr>
+                            <td>Place of Arbitration and Jurisdiction</td>
+                            <td>Sakra</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="mid">
                     <table>
                         <tr>
-                            <td>Customer Id</td>
-                            <td>14706677</td>
-                        </tr>
-                        <tr>
-                            <td>Loan A/C No.</td>
-                            <td>00180100136</td>
-                        </tr>
-                        <tr>
-                            <td>Branch Office Address</td>
-                            <td>Brahmpura, Muzaffarpur</td>
-                        </tr>
-                        <tr>
-                            <td>Name of Applicant</td>
+                            <td>Name of the Applicant</td>
                             <td>MD AFTAB ALI</td>
                         </tr>
                         <tr>
-                            <td>Address of Applicant</td>
-                            <td>Majhaulia Sakra Muzaffarpur Bihar 843104</td>
+                            <td>Name of the Co-Applicant</td>
+                            <td>VARUSN SHARMA</td>
                         </tr>
                         <tr>
-                            <td>Name of Co-Applicant</td>
-                            <td>VARUN SHARMA</td>
-                        </tr>
-                        <tr>
-                            <td>ADDRESS OF CO-APPLICANT</td>
-                            <td>Majhaulia Sakra Muzaffarpur Bihar 843104</td>
-                        </tr>
-                        <tr>
-                            <td>AMOUNT OF LOAN</td>
-                            <td>Rs. 15000.00 ( Fifteen Thousand Rupees Only )</td>
-                        </tr>
-                        <tr>
-                            <td>Rate Of Interest</td>
-                            <td>20.00 % per annum on Flat Balancing Method.</td>
-                        </tr>
-                        <tr>
-                            <td>Loan Duration</td>
-                            <td>364 Days</td>
-                        </tr>
-                        <tr>
-                            <td>Loan Frequency</td>
-                            <td>weekly</td>
-                        </tr>
-                        <tr>
-                            <td>Additional Interest ( Applicable for payment defaults )</td>
-                            <td>An amount not exceeding 44 % p. a. on the outstanding Installments</td>
-                        </tr>
-                        <tr>
-                            <td>Documentation Fee/ Charges</td>
-                            <td>An amount not exceeding Rs. 600.00 .</td>
-                        </tr>
-                        <tr>
-                            <td>Taxes And Levies</td>
-                            <td>All the charges indicated above or elsewhere in the Loan Agreement
-                                shall be exclusive of all taxes and statutory levies as may be applicable
-                                on same including without limitation service tax and cases there on.</td>
+                            <td>Name of the Authorised Signatory</td>
+                            <td>PRAKASH SHARMA</td>
                         </tr>
                     </table>
                 </div>
-            </main>
-            <footer class="footer">
-        
-            </footer>
+                <footer class="footer" style="">
+                    <div class="flex_row">
+                        <p>Signature of Applicant</p>
+                        <p>Signature of Co-Applicant</p>
+                        <p>Authorised Signatory</p>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
 </body>
